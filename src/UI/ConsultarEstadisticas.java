@@ -12,7 +12,6 @@ public class ConsultarEstadisticas {
     private JPanel consultarEstadisticasForm;
 
     public void consultarEstadisticas(String coleccion) {
-        System.out.println("boton consultar estadisticas presionado");
         //Conexion con mongo
         String uri = "mongodb://localhost:27017";
         MongoClient mongoClient = MongoClients.create(uri);
