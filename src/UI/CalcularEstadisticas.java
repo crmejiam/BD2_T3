@@ -129,9 +129,9 @@ public class CalcularEstadisticas {
 
                 comando = con.createStatement().executeQuery("SELECT genero FROM cliente WHERE codigo=" + String.valueOf(cliente));
                 comando.next();
-                String generoCliente = comando.getString(1);
+                String generoCliente = comando.getString(1) + "";
 
-                if (!generoCliente.equals(genero)) {
+                if (!generoCliente.equals(genero+"")) {
                     continue;
                 }
 
