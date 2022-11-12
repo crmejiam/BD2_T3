@@ -23,6 +23,13 @@ public class Home {
                 datosTablas.loadForm(tablasComboBox.getSelectedItem().toString());
             }
         });
+        calcularEstadisticasButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CalcularEstadisticas estadisticas = new CalcularEstadisticas();
+                estadisticas.calcularEstadisticas();
+            }
+        });
     }
 
     public void loadForm(){
