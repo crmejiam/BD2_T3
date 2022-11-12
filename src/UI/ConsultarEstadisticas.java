@@ -29,6 +29,7 @@ public class ConsultarEstadisticas {
             superGranTotal += (int)doc.get("grantotal");
             System.out.println(doc);
         }
+        System.out.println("Super gran total:");
         System.out.println(superGranTotal);
     }
 
