@@ -1,6 +1,5 @@
 package UI;
 
-import com.mongodb.DBObject;
 import com.mongodb.client.result.InsertOneResult;
 import org.bson.Document;
 import com.mongodb.client.MongoClient;
