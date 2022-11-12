@@ -1,6 +1,8 @@
 package UI;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Home {
     private JPanel homeMainPanel;
@@ -12,6 +14,16 @@ public class Home {
     private JLabel consultarDatosEnunciado;
     private JLabel calcularEstadisticasEnunciado;
     private JLabel consultarEstadisticasEnunciado;
+
+    public Home(){
+        botonConsultarDatos.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ConsultarDatos datosTablas = new ConsultarDatos();
+                datosTablas.loadForm(tablasComboBox.getSelectedItem().toString());
+            }
+        });
+    }
 
     public void loadForm(){
         JFrame f = new JFrame("Home");
