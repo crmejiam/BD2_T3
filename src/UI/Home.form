@@ -30,7 +30,7 @@
           <editable value="false"/>
           <model>
             <item value="Marcas"/>
-            <item value="Géneros"/>
+            <item value="Generos"/>
             <item value="Vendedores"/>
           </model>
         </properties>

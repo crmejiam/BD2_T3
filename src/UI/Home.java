@@ -30,6 +30,13 @@ public class Home {
                 estadisticas.calcularEstadisticas();
             }
         });
+        consultarEstadisticasButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ConsultarEstadisticas datosEstadisticas = new ConsultarEstadisticas();
+                datosEstadisticas.consultarEstadisticas(coleccionesComboBox.getSelectedItem().toString());
+            }
+        });
     }
 
     public void loadForm(){

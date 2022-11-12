@@ -46,7 +46,7 @@ public class ConsultarDatos {
     }
 
     public void loadForm(String tabla){
-        JFrame f = new JFrame("Registrar autor");
+        JFrame f = new JFrame("Consultar Datos");
         f.setContentPane(new ConsultarDatos().consultarDatosForm);
         consultarDatos(tabla);
         f.pack();
