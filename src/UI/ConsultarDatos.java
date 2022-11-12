@@ -5,6 +5,8 @@ import java.sql.*;
 
 public class ConsultarDatos {
     private JPanel consultarDatosForm;
+    private final DefaultListModel modelo = new DefaultListModel<>();
+    private JList listaNombres;
 
     public static void main(String[] args) {
     }
@@ -20,25 +22,23 @@ public class ConsultarDatos {
                 switch (tabla){
                     case "sucursal":
                         output = result.getInt(1) + " " + result.getString(2);
-                        System.out.println(output);
                         break;
                     case "vendedor":
                         output = result.getInt(1) + " " + result.getString(2);
-                        System.out.println(output);
                         break;
                     case "cliente":
                         output = result.getInt(1) + " " + result.getString(2) + " " + result.getString(3);
-                        System.out.println(output);
                         break;
                     case "producto":
                         output = result.getInt(1) + " " + result.getString(2) + " " + result.getString(3)+ " " + result.getString(4);
-                        System.out.println(output);
                         break;
                     case "venta":
                         output = result.getInt(1) + " " + result.getInt(2) + " " + result.getInt(3)+ " " + result.getInt(4) + " " + result.getInt(5) + " " + result.getInt(6);
-                        System.out.println(output);
                         break;
                 }
+                System.out.println(output);
+                modelo.addElement(output);
+                listaNombres.setModel(modelo);
             }
         } catch (Exception e) {
             System.out.println(e);
@@ -54,7 +54,4 @@ public class ConsultarDatos {
         f.setVisible(true);
         f.setResizable(false);
     }
-
-
-
 }

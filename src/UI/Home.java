@@ -28,6 +28,7 @@ public class Home {
             public void actionPerformed(ActionEvent e) {
                 CalcularEstadisticas estadisticas = new CalcularEstadisticas();
                 estadisticas.calcularEstadisticas();
+                JOptionPane.showMessageDialog(homeMainPanel,"Las estadisticas se han calculado exitosamente!");
             }
         });
         consultarEstadisticasButton.addActionListener(new ActionListener() {
