@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UI.ConsultarDatos">
-  <grid id="27dc6" binding="consultarDatosForm" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="consultarDatosForm" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="650" height="550"/>
     </constraints>
     <properties>
       <background color="-259"/>
+      <foreground color="-1"/>
+      <minimumSize width="650" height="550"/>
+      <preferredSize width="650" height="550"/>
     </properties>
-    <border type="line" title="Consultar Datos">
-      <font/>
-      <title-color color="-4473925"/>
+    <border type="empty" title="Consultar datos" title-justification="2" title-position="3">
+      <font name="Segoe UI" size="22" style="1"/>
+      <title-color color="-16777216"/>
     </border>
     <children>
-      <component id="41f3" class="javax.swing.JList" binding="listaNombres">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="500" height="500"/>
-            <maximum-size width="500" height="500"/>
-          </grid>
-        </constraints>
-        <properties/>
+      <component id="41f3" class="javax.swing.JList" binding="lista">
+        <constraints/>
+        <properties>
+          <background color="-9342607"/>
+          <font name="Segoe UI" size="20"/>
+          <foreground color="-1513240"/>
+          <maximumSize width="550" height="500"/>
+          <minimumSize width="550" height="500"/>
+          <model/>
+          <opaque value="true"/>
+          <preferredSize width="620" height="500"/>
+          <selectionMode value="1"/>
+          <visibleRowCount value="10"/>
+        </properties>
       </component>
     </children>
   </grid>

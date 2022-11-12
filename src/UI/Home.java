@@ -21,6 +21,7 @@ public class Home {
             public void actionPerformed(ActionEvent e) {
                 ConsultarDatos datosTablas = new ConsultarDatos();
                 datosTablas.loadForm(tablasComboBox.getSelectedItem().toString());
+                datosTablas.consultarDatos(tablasComboBox.getSelectedItem().toString());
             }
         });
         calcularEstadisticasButton.addActionListener(new ActionListener() {
@@ -28,7 +29,7 @@ public class Home {
             public void actionPerformed(ActionEvent e) {
                 CalcularEstadisticas estadisticas = new CalcularEstadisticas();
                 estadisticas.calcularEstadisticas();
-                JOptionPane.showMessageDialog(homeMainPanel,"Las estadisticas se han calculado exitosamente!");
+                JOptionPane.showMessageDialog(homeMainPanel,"Las estadísticas se han calculado exitosamente!");
             }
         });
         consultarEstadisticasButton.addActionListener(new ActionListener() {
