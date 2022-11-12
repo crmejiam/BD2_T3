@@ -16,7 +16,7 @@ public class ConsultarDatos {
     public void consultarDatos(String tabla) {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","eli","2101");
+            Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","1234");
             Statement stmt = con.createStatement();
             ResultSet result = stmt.executeQuery("SELECT * FROM " + tabla);
             while(result.next()){
